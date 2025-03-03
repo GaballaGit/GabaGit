@@ -38,7 +38,7 @@ def parse_args():
     # Pull from repo
     read_tree_parser = commands.add_parser('read-tree')
     read_tree_parser.set_defaults(func=read_tree)
-    read_tree_parser.add_arguments('tree')
+    read_tree_parser.add_argument('tree')
 
     return parser.parse_args()
 

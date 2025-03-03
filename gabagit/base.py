@@ -85,7 +85,7 @@ def read_tree(tree_oid):
     for path, oid in get_tree(tree_oid, base_path='./').items():
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'wb') as f:
-            f.write(data.get_object(oid)
+            f.write(data.get_object(oid))
 
 
 
